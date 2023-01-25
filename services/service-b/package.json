@@ -1,0 +1,22 @@
+{
+  "name": "@cksource-cs/service-b-service",
+  "version": "2.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "service:deploy": "deploy service-b"
+  },
+  "deployOrder": [
+    "service:deploy"
+  ],
+  "dependencies": {
+    "package": "file:../../package",
+    "scripts": "file:../../scripts"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

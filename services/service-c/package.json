@@ -1,0 +1,26 @@
+{
+  "name": "@cksource-cs/service-c-service",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "service:c:deploy": "deploy service-c",
+    "service:c:fail": "foo",
+    "service:deploy:c": "echo this should not be run!"
+  },
+  "deployOrder": [
+    "service:c:deploy",
+    "service:c:fail",
+    "service:deploy:c"
+  ],
+  "dependencies": {
+    "package": "file:../../package",
+    "scripts": "file:../../scripts"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

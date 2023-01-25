@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin": {
+    "deploy": "./deploy.sh"
+  },
+  "dependencies": {
+    "package": "file:../package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
